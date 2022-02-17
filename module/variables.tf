@@ -1,6 +1,5 @@
-variable "sgname" {
-  sensitive = true
-}
+variable "sgname" {}
+
 variable "cidr" {}
 
 variable "mytag" {}
@@ -10,3 +9,4 @@ variable "amiid" {}
 variable "machinetype" {}
 
 variable "keyname" {}
+
