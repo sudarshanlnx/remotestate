@@ -1,10 +1,19 @@
-
 module "instance_provisioning" {
-  source      = "../module"
-  sgname      = var.sgname
-  mytag       = var.mytag
-  amiid       = var.amiid
-  machinetype = var.machinetype
-  keyname     = var.keyname
-  cidr        = var.cidr
+  source            = "../module"
+  sgname            = var.sgname
+  mytag             = var.mytag
+  amiid             = var.amiid
+  machinetype       = var.machinetype
+  keyname           = var.keyname
+  cidr              = var.cidr
+  lb_name           = var.lb_name
+  lb_internal       = var.lb_internal
+  lb_subnets        = var.lb_subnets
+  target_group_name = var.target_group_name
+  target_port       = var.target_port
+  target_protocol   = var.target_protocol
+  vpc_id            = var.vpc_id
+  health_check_path = var.health_check_path
+  listener_port     = var.listener_port
+  listener_protocol = var.listener_protocol
 }
